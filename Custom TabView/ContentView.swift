@@ -65,7 +65,9 @@ struct TabItemView: View {
             .padding(.horizontal, tabItem == selected ? -14 : 16)
             .offset(y: tabItem == selected ? -15 : 0)
             .onTapGesture {
-                selected = tabItem // タップしたら自身をselectedに.
+                withAnimation(.spring()) {
+                    selected = tabItem // タップしたら自身をselectedに.
+                }
             }
     }
 }
