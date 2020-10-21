@@ -15,16 +15,22 @@ struct ContentView: View {
     
     var body: some View {
         
-        // タブビュー部分.
-        HStack {
-            ForEach(TabItem.allCases, id: \.self) { tabItem in
-                TabItemView(tabItem: tabItem, selected: $selected)
+        ZStack {
+            
+            // 背景色.
+            Color("bg").ignoresSafeArea()
+            
+            // タブビュー部分.
+            HStack {
+                ForEach(TabItem.allCases, id: \.self) { tabItem in
+                    TabItemView(tabItem: tabItem, selected: $selected)
+                }
             }
+            .padding(.vertical, 10.0)
+            .padding(.horizontal, 20.0)
+            .background(Color.white.clipShape(Capsule()))
+            .shadow(color: Color.black.opacity(0.3), radius: 5, x: -5, y: 5)
         }
-        .padding(.vertical, 10.0)
-        .padding(.horizontal, 20.0)
-        .background(Color.white.clipShape(Capsule()))
-        .shadow(color: Color.black.opacity(0.3), radius: 5, x: -5, y: 5)
     }
 }
 
