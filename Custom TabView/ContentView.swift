@@ -9,9 +9,22 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct ContentView: View {
+    
+    // タブの選択値と初期値.
+    @State private var selected: TabItem = .piyo
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        // タブビュー部分.
+        HStack {
+            ForEach(TabItem.allCases, id: \.self) { tabItem in
+                TabItemView(tabItem: tabItem, selected: $selected)
+            }
+        }
+        .padding(.vertical, 10.0)
+        .padding(.horizontal, 20.0)
+        .background(Color.white.clipShape(Capsule()))
+        .shadow(color: Color.black.opacity(0.3), radius: 5, x: -5, y: 5)
     }
 }
 
