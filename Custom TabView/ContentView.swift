@@ -19,3 +19,14 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+enum TabItem: String, CaseIterable {
+    case piyo
+    case pen
+    case neko
+    case tobipen
+    
+    var name: String {
+        "\(self.rawValue).gif"
+    }
+}
