@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF9A05AB2540506300FA0946 /* tobipen.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF9A05A72540506300FA0946 /* tobipen.gif */; };
+		EF9A05AC2540506300FA0946 /* piyo.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF9A05A82540506300FA0946 /* piyo.gif */; };
+		EF9A05AD2540506300FA0946 /* pen.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF9A05A92540506300FA0946 /* pen.gif */; };
+		EF9A05AE2540506300FA0946 /* neko.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF9A05AA2540506300FA0946 /* neko.gif */; };
 		EFBABEF925404DBF00F5CEF9 /* Custom_TabViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBABEF825404DBF00F5CEF9 /* Custom_TabViewApp.swift */; };
 		EFBABEFB25404DBF00F5CEF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBABEFA25404DBF00F5CEF9 /* ContentView.swift */; };
 		EFBABEFD25404DC100F5CEF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBABEFC25404DC100F5CEF9 /* Assets.xcassets */; };
@@ -14,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF9A05A52540504900FA0946 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF9A05A72540506300FA0946 /* tobipen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tobipen.gif; sourceTree = "<group>"; };
+		EF9A05A82540506300FA0946 /* piyo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = piyo.gif; sourceTree = "<group>"; };
+		EF9A05A92540506300FA0946 /* pen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pen.gif; sourceTree = "<group>"; };
+		EF9A05AA2540506300FA0946 /* neko.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = neko.gif; sourceTree = "<group>"; };
 		EFBABEF525404DBF00F5CEF9 /* Custom TabView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom TabView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBABEF825404DBF00F5CEF9 /* Custom_TabViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom_TabViewApp.swift; sourceTree = "<group>"; };
 		EFBABEFA25404DBF00F5CEF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,9 +42,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF9A05A62540506300FA0946 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				EF9A05A72540506300FA0946 /* tobipen.gif */,
+				EF9A05A82540506300FA0946 /* piyo.gif */,
+				EF9A05A92540506300FA0946 /* pen.gif */,
+				EF9A05AA2540506300FA0946 /* neko.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
 		EFBABEEC25404DBF00F5CEF9 = {
 			isa = PBXGroup;
 			children = (
+				EF9A05A52540504900FA0946 /* README.md */,
 				EFBABEF725404DBF00F5CEF9 /* Custom TabView */,
 				EFBABEF625404DBF00F5CEF9 /* Products */,
 			);
@@ -56,6 +77,7 @@
 				EFBABEFA25404DBF00F5CEF9 /* ContentView.swift */,
 				EFBABEFC25404DC100F5CEF9 /* Assets.xcassets */,
 				EFBABF0125404DC100F5CEF9 /* Info.plist */,
+				EF9A05A62540506300FA0946 /* Gif */,
 				EFBABEFE25404DC100F5CEF9 /* Preview Content */,
 			);
 			path = "Custom TabView";
@@ -126,7 +148,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9A05AB2540506300FA0946 /* tobipen.gif in Resources */,
+				EF9A05AE2540506300FA0946 /* neko.gif in Resources */,
+				EF9A05AC2540506300FA0946 /* piyo.gif in Resources */,
 				EFBABF0025404DC100F5CEF9 /* Preview Assets.xcassets in Resources */,
+				EF9A05AD2540506300FA0946 /* pen.gif in Resources */,
 				EFBABEFD25404DC100F5CEF9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
