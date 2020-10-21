@@ -20,6 +20,21 @@ struct ContentView: View {
             // 背景色.
             Color("bg").ignoresSafeArea()
             
+            // メイン画面部分はTabViewで定義.
+            TabView(selection: $selected) {
+                HomeView()
+                    .tag(TabItem.piyo)
+                ListView()
+                    .tag(TabItem.pen)
+                SearchView()
+                    .tag(TabItem.neko)
+                SettingView()
+                    .tag(TabItem.tobipen)
+            }
+            // PageTabスタイルを利用する(インジケータは非表示).
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            
+            
             VStack {
                 
                 Spacer(minLength: 0)
