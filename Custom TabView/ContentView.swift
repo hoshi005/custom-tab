@@ -82,3 +82,42 @@ struct TabItemView: View {
             }
     }
 }
+
+
+// MARK: - ダミーの画面たち
+
+struct HomeView: View {
+    var body: some View {
+        Text("Home")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(.red)
+    }
+}
+
+struct ListView: View {
+    var body: some View {
+        Text("List")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(.green)
+    }
+}
+
+struct SearchView: View {
+    var body: some View {
+        Text("Search")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(.blue)
+    }
+}
+
+struct SettingView: View {
+    var body: some View {
+        Text("Setting")
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(.yellow)
+    }
+}
