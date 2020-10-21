@@ -59,7 +59,11 @@ struct TabItemView: View {
         AnimatedImage(name: tabItem.name)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 40)
+            // 選択状態によって、サイズや間隔を調整する.
+            .frame(width: tabItem == selected ? 100 : 40)
+            .padding(.vertical, tabItem == selected ? -30 : 0)
+            .padding(.horizontal, tabItem == selected ? -14 : 16)
+            .offset(y: tabItem == selected ? -15 : 0)
             .onTapGesture {
                 selected = tabItem // タップしたら自身をselectedに.
             }
