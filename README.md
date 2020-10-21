@@ -1,5 +1,17 @@
 # SwiftUI でカスタムタブビューを作ってみる
 
+## 完成形
+
+こんな感じで作ります。
+
+![](images/999.gif)
+
+実装のキーワードとしてはこの辺り
+
+- TabView
+- PageTabViewStyle
+- AnimatedImage
+
 ## 使ったライブラリ
 
 - [SDWebImageSwiftUI](https://github.com/SDWebImage/SDWebImageSwiftUI)
